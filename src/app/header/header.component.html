@@ -1,0 +1,188 @@
+<header class="header">
+  <div class="header-container">
+    <div class="logo-section">
+      <a href="home"><img
+          src="https://res.cloudinary.com/dw7dhefpb/image/upload/v1745520915/Screenshot_2025-04-25_002437_djpkpx.png"
+          alt="Udemy Logo" class="logo" routerLink="/" /></a>
+      <button class="explore-btn">Explore</button>
+    </div>
+
+    <div class="search-bar">
+      <div class="search-icon">
+        <i class="fa fa-search"></i>
+      </div>
+      <input type="text" placeholder="Find expert-led courses to boost your career" />
+    </div>
+
+    <div class="navigation">
+      <a routerLink="plans-pricing" class="nav-link">Plans & Pricing</a>
+      <a href="business" class="nav-link">Udemy Business</a>
+      <a href="teachOnUdemy" class="nav-link">Teach on Udemy</a>
+      <button class="cart-btn">
+        <i class="fa fa-shopping-cart"></i>
+      </button>
+      <a href="login"><button class="login-btn">Log in</button></a>
+      <a href="signUp"><button class="signup-btn">Sign up</button></a>
+      <button class="language-btn">
+        <i class="fa fa-globe"></i>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- Mobile-->
+<header class="mobile-header">
+  <div class="mobile-header-container">
+    <button class="mobile-menu-button" (click)="toggleSidebar()">
+      <span class="mobile-menu-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+          <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path>
+        </svg>
+      </span>
+    </button>
+
+    <a routerLink="/" class="mobile-logo">
+      <img src="https://frontends.udemycdn.com/frontends-homepage/staticx/udemy/images/v7/logo-udemy.svg" alt="Udemy">
+    </a>
+
+    <div class="mobile-header-actions">
+      <button class="mobile-search-button">
+        <span class="mobile-search-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+            <path
+              d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z">
+            </path>
+          </svg>
+        </span>
+      </button>
+
+      <button class="mobile-cart-button">
+        <span class="mobile-cart-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+            <path
+              d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.08-.14.12-.31.12-.48 0-.55-.45-1-1-1H5.21l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z">
+            </path>
+          </svg>
+        </span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- Sidebar Menu (moved outside header for proper overlay) -->
+<div class="mobile-sidebar" [ngClass]="{'mobile-sidebar-open': isSidebarOpen}">
+  <!-- Close button positioned outside menu content -->
+  <button class="mobile-close-button" (click)="toggleSidebar()">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+      <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z">
+      </path>
+    </svg>
+  </button>
+
+  <div class="mobile-sidebar-content">
+    <div class="mobile-sidebar-section mobile-auth-links">
+      <a href="#" class="mobile-auth-link">Log in</a>
+      <a href="#" class="mobile-auth-link">Sign up</a>
+      <a routerLink="/plans-pricing" class="mobile-auth-link">Plans & Pricing</a>
+    </div>
+
+    <div class="mobile-sidebar-section">
+      <h3 class="mobile-section-title">Explore by Goal</h3>
+      <ul class="mobile-menu-list">
+        <li class="mobile-menu-item">
+          <a href="#">Launch a new career</a>
+          <span class="mobile-arrow-icon">›</span>
+        </li>
+        <li class="mobile-menu-item">
+          <a href="#">Certification preparation</a>
+          <span class="mobile-arrow-icon">›</span>
+        </li>
+      </ul>
+    </div>
+
+    <div class="mobile-sidebar-section">
+      <h3 class="mobile-section-title">Most popular</h3>
+      <ul class="mobile-menu-list">
+        <li class="mobile-menu-item">
+          <a href="#">Web Development</a>
+          <span class="mobile-arrow-icon">›</span>
+        </li>
+        <li class="mobile-menu-item">
+          <a href="#">Mobile Development</a>
+          <span class="mobile-arrow-icon">›</span>
+        </li>
+        <li class="mobile-menu-item">
+          <a href="#">Game Development</a>
+          <span class="mobile-arrow-icon">›</span>
+        </li>
+        <li class="mobile-menu-item">
+          <a href="#">Entrepreneurship</a>
+          <span class="mobile-arrow-icon">›</span>
+        </li>
+        <li class="mobile-menu-item">
+          <a href="#">Business Analytics & Intelligence</a>
+          <span class="mobile-arrow-icon">›</span>
+        </li>
+        <li class="mobile-menu-item">
+          <a href="#">Finance</a>
+          <span class="mobile-arrow-icon">›</span>
+        </li>
+        <li class="mobile-menu-item">
+          <a href="#">IT Certifications</a>
+          <span class="mobile-arrow-icon">›</span>
+        </li>
+        <li class="mobile-menu-item">
+          <a href="#">Personal Transformation</a>
+          <span class="mobile-arrow-icon">›</span>
+        </li>
+        <li class="mobile-menu-item">
+          <a href="#">Graphic Design & Illustration</a>
+          <span class="mobile-arrow-icon">›</span>
+        </li>
+        <li class="mobile-menu-item">
+          <a href="#">Digital Marketing</a>
+          <span class="mobile-arrow-icon">›</span>
+        </li>
+        <li class="mobile-menu-item">
+          <a href="#">All Categories</a>
+          <span class="mobile-arrow-icon">›</span>
+        </li>
+      </ul>
+    </div>
+
+    <div class="mobile-sidebar-section">
+      <h3 class="mobile-section-title">More for Udemy</h3>
+      <ul class="mobile-menu-list">
+        <li class="mobile-menu-item">
+          <a href="#">Udemy Business</a>
+        </li>
+        <li class="mobile-menu-item">
+          <a href="#">Get the App</a>
+        </li>
+        <li class="mobile-menu-item">
+          <a href="#">Invite Friends</a>
+        </li>
+        <li class="mobile-menu-item">
+          <a href="#">Help and Support</a>
+        </li>
+      </ul>
+      <div class="mobile-language-selector">
+        <button class="mobile-language-button">
+          <span class="mobile-globe-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"></circle>
+              <line x1="2" y1="12" x2="22" y2="12"></line>
+              <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z">
+              </path>
+            </svg>
+          </span>
+          English
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Overlay for when sidebar is open -->
+<div class="mobile-sidebar-overlay" [ngClass]="{'mobile-overlay-active': isSidebarOpen}" (click)="toggleSidebar()">
+</div>

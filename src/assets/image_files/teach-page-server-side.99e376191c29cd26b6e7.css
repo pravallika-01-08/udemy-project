@@ -1,0 +1,50 @@
+@container ud-content-area (min-width: 553px) {
+}@container ud-content-area (min-width: 653px) {
+}@container ud-content-area (min-width: 1153px) {
+}@container ud-content-area (min-width: 1153px) {
+}@container ud-content-area (min-width: 1232px) {
+}@container ud-content-area (min-width: 553px) {
+}@container ud-content-area (min-width: 653px) {
+}@container ud-content-area (min-width: 933px) {
+}@container ud-content-area (min-width: 553px) {
+}@container ud-content-area (min-width: 653px) {
+}@container ud-content-area (min-width: 933px) {
+}@container ud-content-area (min-width: 1153px) {
+}.teach-page {
+  white-space: pre-line;
+}
+.teach-page__margin-center {
+  margin-left: auto;
+  margin-right: auto;
+}
+.teach-page__container {
+  padding: 4.8rem 2.4rem;
+  text-align: center;
+}
+.teach-page__pale-container {
+  background: #f6f7f9;
+}
+@media (min-width: 43.8125rem) {
+  .teach-page__heading {
+    font-family: var(--font-stack-heading-serif);
+    font-weight: 700;
+    font-size: clamp(3.2rem, calc(3.2rem + (4.8 - 3.2) * calc((100vw - 36rem) / (144 - 36))), 4.8rem);
+    line-height: 1.15;
+    letter-spacing: -0.04rem;
+    max-width: 36em;
+  }
+  .teach-page__main-heading {
+    font-family: var(--font-stack-heading-serif);
+    font-weight: 700;
+    font-size: clamp(3.6rem, calc(3.6rem + (5.6 - 3.6) * calc((100vw - 36rem) / (144 - 36))), 5.6rem);
+    line-height: 1.15;
+    letter-spacing: -0.048rem;
+    max-width: 36em;
+  }
+  .teach-page__container {
+    padding: 8.8rem 2.4rem;
+  }
+}
+
+
+/*# sourceMappingURL=teach-page-server-side.99e376191c29cd26b6e7.css.map*/

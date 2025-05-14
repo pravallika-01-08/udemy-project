@@ -1,0 +1,427 @@
+<div class="cta-container">
+  <div class="text-section">
+    <h1>Come<br>teach with<br>us</h1>
+    <p>Become an instructor and change lives <br> — including your own</p>
+    <button>Get started</button>
+  </div>
+  <div class="image-section">
+    <img src="../../assets/image1.png" alt="Instructor">
+  </div>
+</div>
+<div class="reasons-container">
+  <h2 class="title">So many reasons to start</h2>
+  <div class="reasons-list">
+    <div class="reason-item">
+      <img src="../../assets/teach-your-way.png" alt="Teach your way">
+      <h3>Teach your way</h3>
+      <p>Publish the course you want, in the way you want, and always have control of your own content.</p>
+    </div>
+
+    <div class="reason-item">
+      <img src="assets/inspire-learners.png" alt="Inspire learners">
+      <h3>Inspire learners</h3>
+      <p>Teach what you know and help learners explore their interests, gain new skills, and advance their careers.</p>
+    </div>
+
+    <div class="reason-item">
+      <img src="assets/get-rewarded.png" alt="Get rewarded">
+      <h3>Get rewarded</h3>
+      <p>Expand your professional network, build your expertise, and earn money on each paid enrollment.</p>
+    </div>
+  </div>
+</div>
+<div class="stats-container">
+  <div class="stat-item">
+    <h2>73M</h2>
+    <p>Students</p>
+  </div>
+  <div class="stat-item">
+    <h2>75+</h2>
+    <p>Languages</p>
+  </div>
+  <div class="stat-item">
+    <h2>1B</h2>
+    <p>Enrollments</p>
+  </div>
+  <div class="stat-item">
+    <h2>180+</h2>
+    <p>Countries</p>
+  </div>
+  <div class="stat-item">
+    <h2>16,000+</h2>
+    <p>Enterprise customers</p>
+  </div>
+</div>
+
+<!--How to begin-->
+<div class="how-to-begin-container">
+  <h1 class="how-to-begin-main-heading">How to begin</h1>
+  
+  <div class="how-to-begin-tabs-container">
+    <div class="how-to-begin-tab" 
+         [ngClass]="{'how-to-begin-tab-active': activeTab === 'plan'}"
+         (click)="setActiveTab('plan')">Plan your curriculum</div>
+    <div class="how-to-begin-tab" 
+         [ngClass]="{'how-to-begin-tab-active': activeTab === 'record'}"
+         (click)="setActiveTab('record')">Record your video</div>
+    <div class="how-to-begin-tab" 
+         [ngClass]="{'how-to-begin-tab-active': activeTab === 'launch'}"
+         (click)="setActiveTab('launch')">Launch your course</div>
+  </div>
+  
+  <div class="how-to-begin-content-container">
+    <!-- Plan your curriculum content -->
+    <div class="how-to-begin-text-content" *ngIf="activeTab === 'plan'">
+      <p class="how-to-begin-intro-text">
+        You start with your passion and knowledge. Then choose a promising topic with the help of our Marketplace Insights tool.
+      </p>
+      <p class="how-to-begin-teaching-text">
+        The way that you teach — what you bring to it — is up to you.
+      </p>
+      <h3 class="how-to-begin-help-heading">How we help you</h3>
+      <p class="how-to-begin-resources-text">
+        We offer plenty of resources on how to create your first course. And, our instructor dashboard and curriculum pages help keep you organized.
+      </p>
+    </div>
+    
+    <!-- Record your video content -->
+    <div class="how-to-begin-text-content" *ngIf="activeTab === 'record'">
+      <p class="how-to-begin-intro-text">
+        Use basic tools like a smartphone or a DSLR camera. Add a good microphone and you're ready to start.
+      </p>
+      <p class="how-to-begin-teaching-text">
+        If you don't like being on camera, just capture your screen. Either way, we recommend two hours or more of video for a paid course.
+      </p>
+      <h3 class="how-to-begin-help-heading">How we help you</h3>
+      <p class="how-to-begin-resources-text">
+        Our support team is available to help you throughout the process and provide feedback on test videos.
+      </p>
+    </div>
+    
+    <!-- Launch your course content -->
+    <div class="how-to-begin-text-content" *ngIf="activeTab === 'launch'">
+      <p class="how-to-begin-intro-text">
+        Gather your first ratings and reviews by promoting your course through social media and your professional networks.
+      </p>
+      <p class="how-to-begin-teaching-text">
+        Your course will be discoverable in our marketplace where you earn revenue from each paid enrollment.
+      </p>
+      <h3 class="how-to-begin-help-heading">How we help you</h3>
+      <p class="how-to-begin-resources-text">
+        Our custom coupon tool lets you offer enrollment incentives while our global promotions drive traffic to courses. There's even more opportunity for courses chosen for Udemy Business.
+      </p>
+    </div>
+    
+    <div class="how-to-begin-image-container">
+      <img *ngIf="activeTab === 'plan'" src="https://s.udemycdn.com/teaching/plan-your-curriculum-v3.jpg" alt="Person creating online course" class="how-to-begin-course-image">
+      <img *ngIf="activeTab === 'record'" src="https://s.udemycdn.com/teaching/record-your-video-v3.jpg" alt="Person recording course video" class="how-to-begin-course-image">
+      <img *ngIf="activeTab === 'launch'" src="https://s.udemycdn.com/teaching/launch-your-course-v3.jpg" alt="Person launching online course" class="how-to-begin-course-image">
+    </div>
+  </div>
+</div>
+
+
+<!----Mobile-How to begin---->
+<div class="mobile-how-to-begin-container">
+  <h1 class="mobile-main-title">How to begin</h1>
+  <div class="mobile-divider"></div>
+  
+  <div class="mobile-dropdown-item">
+    <div class="mobile-dropdown-header">
+      <span>Plan your curriculum</span>
+      <span class="mobile-dropdown-icon">&#9662;</span>
+    </div>
+    <div class="mobile-divider"></div>
+  </div>
+  
+  <div class="mobile-dropdown-item">
+    <div class="mobile-dropdown-header">
+      <span>Record your video</span>
+      <span class="mobile-dropdown-icon">&#9662;</span>
+    </div>
+    <div class="mobile-divider"></div>
+  </div>
+  
+  <div class="mobile-dropdown-item">
+    <div class="mobile-dropdown-header">
+      <span>Launch your course</span>
+      <span class="mobile-dropdown-icon">&#9662;</span>
+    </div>
+    <div class="mobile-divider"></div>
+  </div>
+</div>
+
+
+<!---Teaching on Udemy has provided me wit--->
+<div class="testimonial-slider">
+  <!-- Desktop version -->
+  <div class="testimonial-container desktop">
+    <!-- Navigation arrow for desktop -->
+    <button class="nav-arrow">
+      <span class="arrow-left">&#10094;</span>
+    </button>
+    
+    <div class="testimonial-content-wrapper">
+      <div class="testimonial-image">
+        <img src="https://s.udemycdn.com/teaching/instructors/en/deborah-2x.jpg" alt="Deborah Grayson Riege">
+      </div>
+      <div class="testimonial-content">
+        <p class="quote">
+          "Teaching on Udemy has provided <br/> me with two important elements: <br/> the opportunity to reach more <br/> learners than I ever would be able to <br/> on my own and a steady stream of <br/>extra income."
+        </p>
+        <p class="author-name">Deborah Grayson Riege</p>
+        <p class="author-title">Leadership, Communication</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!---mobile--Teaching on Udemy has provided me wit--->
+<div class="testimonial-container mobile">
+    <!-- Navigation arrow for mobile -->
+    <button class="nav-arrow">
+      <span class="arrow-left">&#10094;</span>
+    </button>
+    
+    <div class="testimonial-content-wrapper">
+      <div class="testimonial-image">
+        <img src="https://s.udemycdn.com/teaching/instructors/en/deborah-2x.jpg" alt="Deborah Grayson Riege">
+      </div>
+      <div class="testimonial-content">
+        <p class="quote">
+          "Teaching on Udemy has provided me with two important elements: the opportunity to reach more learners than I ever would be able to on my own and a steady stream of extra income."
+        </p>
+        <p class="author-name">Deborah Grayson Riege</p>
+        <p class="author-title">Leadership, Communication</p>
+      </div>
+    </div>
+</div>
+
+<!---desktop-You won’t have to do it alone--->
+<div class="you-wont-support-section">
+  <div class="you-wont-support-images">
+    <div class="you-wont-left-image">
+      <img src="https://s.udemycdn.com/teaching/support-1-v3.jpg" alt="Instructor support illustration">
+    </div>
+    <div class="you-wont-right-image">
+      <img src="https://s.udemycdn.com/teaching/support-2-v3.jpg" alt="Community support illustration">
+    </div>
+  </div>
+  
+  <div class="you-wont-support-content">
+    <h2 class="you-wont-support-heading">You won't have to do it alone</h2>
+    <p class="you-wont-support-text">
+      Our <strong>Instructor Support Team</strong> is here to answer your questions and review your test video, while our <strong>Teaching Center</strong> gives you plenty of resources to help you through the process. Plus, get the support of experienced instructors in our <strong>online community</strong>.
+    </p>
+    <p class="you-wont-support-links">
+      <a href="#" class="you-wont-learn-more-link">Need more details before you start? Learn more.</a>
+    </p>
+  </div>
+</div>
+
+<!---mobile-You won’t have to do it alone--->
+<div class="you-wont-support-section-mobile">
+  <div class="you-wont-support-image-mobile">
+    <img src="https://s.udemycdn.com/teaching/support-1-v3.jpg" alt="Instructor support illustration">
+  </div>
+  
+  <h2 class="you-wont-support-heading-mobile">You won't have to do it alone</h2>
+  
+  <p class="you-wont-support-text-mobile">
+    Our <strong>Instructor Support Team</strong> is here to answer your questions and review your test video, while our <strong>Teaching Center</strong> gives you plenty of resources to help you through the process. Plus, get the support of experienced instructors in our <strong>online community</strong>.
+  </p>
+  
+  <p class="you-wont-support-links-mobile">
+    <a href="#" class="you-wont-learn-more-link-mobile">Need more details before you start? Learn more.</a>
+  </p>
+</div>
+
+
+<!----Become an instructor today-->
+<div class="instructor-cta-section">
+  <div class="container">
+    <h2 class="cta-heading">Become an instructor today</h2>
+    <p class="cta-subtext">Join one of the world's largest online learning <br/>marketplaces.</p>
+    <button class="cta-button">Get started</button>
+  </div>
+</div>
+
+
+<!---footer-->
+ <footer class="footer">
+    <!-- Top logos and heading -->
+    <div class="footer-top">
+      <p>Top companies choose <strong>Udemy Business</strong> to build in-demand career skills.</p>
+      <div class="footer-logos">
+        <img src="https://s.udemycdn.com/partner-logos/v4/nasdaq-light.svg" alt="Nasdaq">
+        <img class="volk-image-logo" src="https://s.udemycdn.com/partner-logos/v4/volkswagen-light.svg"
+          alt="Volkswagen">
+        <img src="https://s.udemycdn.com/partner-logos/v4/netapp-light.svg" alt="NetApp">
+        <img src="https://s.udemycdn.com/partner-logos/v4/eventbrite-light.svg" alt="Eventbrite">
+      </div>
+      <div class="mobile-footer-logo">
+        <img src="https://s.udemycdn.com/partner-logos/v4/nasdaq-light.svg" alt="Nasdaq">
+        <img src="https://s.udemycdn.com/partner-logos/v4/volkswagen-light.svg" alt="Volkswagen">
+      </div>
+      <div class="mobile-footer-logo">
+        <img src="https://s.udemycdn.com/partner-logos/v4/netapp-light.svg" alt="NetApp">
+        <img src="https://s.udemycdn.com/partner-logos/v4/eventbrite-light.svg" alt="Eventbrite">
+      </div>
+    </div>
+    <hr>
+
+    <!-- Links section -->
+    <div class="footer-links">
+      <div class="footer-column">
+        <h4>In-demand Careers</h4>
+        <ul>
+          <li><a href="#">Data Scientist</a></li>
+          <li><a href="#">Full Stack Web Developer</a></li>
+          <li><a href="#">Cloud Engineer</a></li>
+          <li><a href="#">Project Manager</a></li>
+          <li><a href="#">Game Developer</a></li>
+          <li><a href="#">See all Career Accelerators</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h4>Web Development</h4>
+        <ul>
+          <li><a href="#">Web Development</a></li>
+          <li><a href="#">JavaScript</a></li>
+          <li><a href="#">React JS</a></li>
+          <li><a href="#">Angular</a></li>
+          <li><a href="#">Java</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h4>IT Certifications</h4>
+        <ul>
+          <li><a href="#">Amazon AWS</a></li>
+          <li><a href="#">AWS Certified Cloud Practitioner</a></li>
+          <li><a href="#">AZ-900: Microsoft Azure Fundamentals</a></li>
+          <li><a href="#">AWS Certified Solutions Architect</a></li>
+          <li><a href="#">Kubernetes</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h4>Leadership</h4>
+        <ul>
+          <li><a href="#">Leadership</a></li>
+          <li><a href="#">Management Skills</a></li>
+          <li><a href="#">Project Management</a></li>
+          <li><a href="#">Personal Productivity</a></li>
+          <li><a href="#">Emotional Intelligence</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Mid Links -->
+    <div class="footer-links">
+      <div class="footer-column">
+        <h4>Certifications by Skill</h4>
+        <ul>
+          <li><a href="#">Cybersecurity Certification</a></li>
+          <li><a href="#">Project Management Certification</a></li>
+          <li><a href="#">Cloud Certification</a></li>
+          <li><a href="#">Data Analytics Certification</a></li>
+          <li><a href="#">HR Management Certification</a></li>
+          <li><a href="#">See all Certifications</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h4>Data Science</h4>
+        <ul>
+          <li><a href="#">Data Science</a></li>
+          <li><a href="#">Python</a></li>
+          <li><a href="#">Machine Learning</a></li>
+          <li><a href="#">ChatGPT</a></li>
+          <li><a href="#">Deep Learning</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h4>Communication</h4>
+        <ul>
+          <li><a href="#">Communication Skills</a></li>
+          <li><a href="#">Presentation Skills</a></li>
+          <li><a href="#">Public Speaking</a></li>
+          <li><a href="#">Writing</a></li>
+          <li><a href="#">PowerPoint</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h4>Business Analytics & Intelligence</h4>
+        <ul>
+          <li><a href="#">Microsoft Excel</a></li>
+          <li><a href="#">SQL</a></li>
+          <li><a href="#">Microsoft Power BI</a></li>
+          <li><a href="#">Data Analysis</a></li>
+          <li><a href="#">Business Analysis</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Bottom links -->
+    <div class="footer-links">
+      <div class="footer-column">
+        <h4>About</h4>
+        <ul>
+          <li><a href="#">About us</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Contact us</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Investors</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h4>Discover Udemy</h4>
+        <ul>
+          <li><a href="#">Get the app</a></li>
+          <li><a href="#">Teach on Udemy</a></li>
+          <li><a href="#">Plans and Pricing</a></li>
+          <li><a href="#">Affiliate</a></li>
+          <li><a href="#">Help and Support</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h4>Udemy for Business</h4>
+        <ul>
+          <li><a href="#">Udemy Business</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h4>Legal & Accessibility</h4>
+        <ul>
+          <li><a href="#">Accessibility statement</a></li>
+          <li><a href="#">Privacy policy</a></li>
+          <li><a href="#">Sitemap</a></li>
+          <li><a href="#">Terms</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Very bottom -->
+    <div class="footer-bottom">
+      <div class="footer-left">
+        <img src="https://www.udemy.com/staticx/udemy/images/v7/logo-udemy-inverted.svg" alt="Udemy Logo"
+          class="footer-logo">
+        <p>© 2025 Udemy, Inc.</p>
+      </div>
+      <div class="cookie-settings">
+        <a href="#">Cookie settings</a>
+      </div>
+      <div class="footer-right">
+        <a href="#" class="language">🌐 English</a>
+      </div>
+    </div>
+
+
+  </footer>
