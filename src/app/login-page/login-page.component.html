@@ -5,8 +5,18 @@
     </div>
     <div class="login-details">
       <h2>Log in to continue your <br> learning journey</h2>
-      <input type="email" placeholder="Email"> <br>
-      <button>Continue With email</button>
+     <form (ngSubmit)="onSubmit()" #loginForm="ngForm">
+      <input
+        type="email"
+        name="email"
+        [(ngModel)]="email"
+        required
+        placeholder="Email"
+      />
+      <br />
+      <button type="submit">Continue with email</button>
+    </form>
+
       <div class="divider">Other log in options</div>
       <div class="social-login">
         <img src="assets/Google.png" alt="Login with Google">
